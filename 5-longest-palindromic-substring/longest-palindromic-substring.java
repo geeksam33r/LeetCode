@@ -5,9 +5,7 @@ class Solution {
         int start = 0, end = 0;
 
         for (int i = 0; i < s.length(); i++) {
-            // Check odd length palindrome
             int len1 = expandAroundCenter(s, i, i);
-            // Check even length palindrome
             int len2 = expandAroundCenter(s, i, i + 1);
 
             int len = Math.max(len1, len2);
